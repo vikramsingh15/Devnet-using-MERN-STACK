@@ -8,16 +8,18 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
   const authLink = (
     <Fragment>
       <li>
+        <Link to='/profiles'>
+          <span>Profiles</span>
+        </Link>
+      </li>
+
+      <li>
         <Link to='/dashboard'>
           <i className='fas fa-user' />
           <span className='hide-sm'>Dashboard</span>
         </Link>
       </li>
-      <li>
-        <Link to='/profiles'>
-          <span className='hide-sm'>Profiles</span>
-        </Link>
-      </li>
+
       <li onClick={() => logout()}>
         <a href='#!'>
           <i className='fas fa-sign-out-alt' />

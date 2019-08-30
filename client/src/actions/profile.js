@@ -28,7 +28,7 @@ export const createProfile = formData => async dispatch => {
   try {
     const res = await axios.post('/api/profile/me', formData);
     dispatch({ type: CREATE_PROFILE, payload: res.data });
-    dispatch(setAlert('Profile created success fully', 'success'));
+    dispatch(setAlert('Profile created successfully', 'success'));
     history.push('/dashboard');
   } catch (err) {
     errorHandler(err, PROFILE_ERROR, dispatch);
