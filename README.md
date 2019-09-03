@@ -15,13 +15,13 @@ create .env file in root directory
 
      add these variables in .env file
      
-jwtSecret='bbmnmklmkljkkkjlmklmlkm' //shouldn't be shown
+jwtSecret='bbmnmklmkljkkkjlmklmlkm' 
 
 
 gitId="a44c3e5cceb8698a41bc"
 
 
-gitSecret="643d7d2a6debf60c2aa12f7a4d483e687db582d9" shouldn't be shown
+gitSecret="643d7d2a6debf60c2aa12f7a4d483e687db582d9" 
 
 
 ### Install server dependencies
